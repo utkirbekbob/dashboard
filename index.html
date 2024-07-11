@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div>
+    <header class="bg-[#171717]">
+      <nav class="mx-auto flex justify-between px-4 py-3">
+        <div class="flex gap-6">
+          <div class="flex items-center gap-1">
+            <i class="fa-solid fa-house" style="color: white"></i>
+            <span class="text-white">Home</span>
+          </div>
+          <div class="flex items-center gap-1">
+            <i class="fa-solid fa-list" style="color: white"></i>
+            <span class="text-white">Contents</span>
+          </div>
+          <div class="flex items-center gap-1">
+            <i class="fa-solid fa-bars" style="color: white"></i>
+            <span class="text-white">Categories</span>
+          </div>
+          <div class="flex items-center gap-1">
+            <i class="fa-solid fa-gear" style="color: white"></i>
+            <span class="text-white">Settings</span>
+          </div>
+        </div>
+        <div
+          class="flex items-center gap-1 bg-white rounded-3xl pl-1 pr-4 py-1"
+        >
+          <img src="images/ismail.png" alt="" />
+          <span class="text-[#111827]">İsmail İhsan Bülbül</span>
+        </div>
+      </nav>
+    </header>
+    <main class="flex">
+      <div class="bg-[#111827] w-[260px] py-4 px-4 h-[100vh]">
+        <div class="bg-[#E5E5E5] flex items-center gap-1 rounded-md py-3 px-3">
+          <i class="fa-solid fa-plus" style="color: #171717"></i>
+          <span class="text-[#171717]">New Item</span>
+        </div>
+        <div class="flex items-center justify-between py-4">
+          <div class="flex items-center gap-1">
+            <img src="images/darhboard.svg" alt="" />
+            <span class="text-white">Dashboard</span>
+          </div>
+          <i class="fa-solid fa-caret-down" style="color: #fff"></i>
+        </div>
+        <div class="flex items-center justify-between py-4">
+          <div class="flex items-center gap-1">
+            <img src="images/darhboard.svg" alt="" />
+            <span class="text-white">Application</span>
+          </div>
+          <i class="fa-solid fa-caret-down" style="color: #fff"></i>
+        </div>
+        <div class="flex items-center justify-between py-4">
+          <div class="flex items-center gap-1">
+            <img src="images/darhboard.svg" alt="" />
+            <span class="text-white">Elements</span>
+          </div>
+          <i class="fa-solid fa-caret-down" style="color: #fff"></i>
+        </div>
+        <div class="flex items-center justify-between py-4">
+          <div class="flex items-center gap-1">
+            <img src="images/darhboard.svg" alt="" />
+            <span class="text-white">Forms</span>
+          </div>
+          <i class="fa-solid fa-caret-down" style="color: #fff"></i>
+        </div>
+        <div class="flex items-center justify-between py-4">
+          <div class="flex items-center gap-1">
+            <img src="images/darhboard.svg" alt="" />
+            <span class="text-white">Plugins</span>
+          </div>
+          <i class="fa-solid fa-caret-down" style="color: #fff"></i>
+        </div>
+        <div class="flex items-center justify-between py-4">
+          <div class="flex items-center gap-1">
+            <img src="images/darhboard.svg" alt="" />
+            <span class="text-white">Elements</span>
+          </div>
+          <i class="fa-solid fa-caret-down" style="color: #fff"></i>
+        </div>
+        <div class="flex items-center justify-between py-4">
+          <div class="flex items-center gap-1">
+            <img src="images/darhboard.svg" alt="" />
+            <span class="text-white">Datagrid</span>
+          </div>
+          <i class="fa-solid fa-caret-down" style="color: #fff"></i>
+        </div>
+        <div class="flex items-center justify-between py-4">
+          <div class="flex items-center gap-1">
+            <img src="images/darhboard.svg" alt="" />
+            <span class="text-white">Settings</span>
+          </div>
+          <i class="fa-solid fa-caret-down" style="color: #fff"></i>
+        </div>
+      </div>
+
+      <div class="right w-[1800px] bg-[#f5f5f5]">
+        <div
+          class="flex justify-between items-center max-w-screen py-4 px-6 bg-white"
+        >
+          <div class="flex gap-8 items-center">
+            <h2 class="text-2xl text-[#262626]">Add new post</h2>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-plus" style="color: #262626"></i>
+              <span class="text-[#262626]">Add Content</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-gear" style="color: #262626"></i>
+              <span class="text-[#262626]">Settings</span>
+            </div>
+          </div>
+          <div class="border flex items-center p-3 rounded-md">
+            <input
+              type="text"
+              placeholder="Search content.."
+              class="bg-transparent outline-none placeholder:text-[#000]"
+            />
+            <i class="fa-solid fa-magnifying-glass" style="color: #000"></i>
+          </div>
+        </div>
+
+        <div class="px-6 flex justify-between items-center py-8">
+          <div class="bg-white p-5 pr-[114px] rounded-xl flex items-center gap-4">
+            <i class="fa-solid fa-bag-shopping fa-2xl" style="color: #EA580C"></i>
+            <div>
+              <span class="text-xs">Total Sales</span>
+              <h3 class="text-2xl font-bold">$2,456</h3>
+            </div>
+          </div>
+          <div class="bg-white p-5 pr-[114px] rounded-xl flex items-center gap-4">
+            <i class="fa-solid fa-shop fa-2xl" style="color: #7C3AED;"></i>
+            <div>
+              <span class="text-xs">Total Expenses</span>
+              <h3 class="text-2xl font-bold">$3,326</h3>
+            </div>
+          </div>
+          <div class="bg-white p-5 pr-[114px] rounded-xl flex items-center gap-4">
+            <i class="fa-solid fa-user fa-2xl" style="color: #059669;"></i>
+            <div>
+              <span class="text-xs">Total Visitors</span>
+              <h3 class="text-2xl font-bold">5,325</h3>
+            </div>
+          </div>
+          <div class="bg-white p-5 pr-[114px] rounded-xl flex items-center gap-4">
+            <i class="fa-solid fa-bars fa-2xl" style="color: #9333EA;"></i>
+            <div>
+              <span class="text-xs">Total Orders</span>
+              <h3 class="text-2xl font-bold">1,326</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class=" mx-7 my-7 bg-white shadow-md rounded-lg p-6">
+          <h1 class="text-2xl font-bold mt-4 text-[#262626]">Form title</h1>
+          <p class="text-[#262626] mb-6">Sed tortor, sed velit ridiculus ipsum pharetra lacus odio gravida augue enim.</p>
+  
+          <div class="bg-[#FEF2F2] border border-[#F87171] text-[#7F1D1D] px-4 py-3 rounded mb-6" role="alert">
+            <i class="fa-solid fa-circle-info" style="color: #7F1D1D; margin-right: 12px;"></i>
+              <span class="block sm:inline">Senectus malesuada suspendisse bibendum elit amet vitae.</span>
+          </div>
+
+          <div class="overflow-x-auto rounded-lg">
+            <table class="min-w-full bg-white">
+                <thead>
+                    <tr class="bg-[#D4D4D4] justify-start items-start">
+                        <th class="px-4 py-2">Table Title</th>
+                        <th class="px-4 py-2">Table Title</th>
+                        <th class="px-4 py-2">Table Title</th>
+                        <th class="px-4 py-2">Table Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-gray-100">
+                        <td class="border px-4 py-2">Etiam purus in</td>
+                        <td class="border px-4 py-2">Curabitur donec duis</td>
+                        <td class="border px-4 py-2">Morbi pharetra, accumsan</td>
+                        <td class="border px-4 py-2">
+                          <button class="flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-edit mr-2"></i><span>Edit</span>
+                        </button>
+                        <button class="flex items-center bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-trash-alt mr-2"></i><span>Delete</span>
+                        </button>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2">Duis eget habitant</td>
+                        <td class="border px-4 py-2">At amet odio</td>
+                        <td class="border px-4 py-2">Commodo eget scelerisque</td>
+                        <td class="border px-4 py-2">
+                          <button class="flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-edit mr-2"></i><span>Edit</span>
+                        </button>
+                        <button class="flex items-center bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-trash-alt mr-2"></i><span>Delete</span>
+                        </button>
+                        </td>
+                    </tr>
+                    <tr class="bg-gray-100">
+                        <td class="border px-4 py-2">Aliquam velit lacus</td>
+                        <td class="border px-4 py-2">Pellentesque egestas placerat</td>
+                        <td class="border px-4 py-2">Tortor habitant sit</td>
+                        <td class="border px-4 py-2">
+                          <button class="flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-edit mr-2"></i><span>Edit</span>
+                        </button>
+                        <button class="flex items-center bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-trash-alt mr-2"></i><span>Delete</span>
+                        </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2">Fermentum scelerisque ultricies</td>
+                        <td class="border px-4 py-2">Morbi sagittis nulla</td>
+                        <td class="border px-4 py-2">Quam semper quis</td>
+                        <td class="border px-4 py-2">
+                          <button class="flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-edit mr-2"></i><span>Edit</span>
+                        </button>
+                        <button class="flex items-center bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-trash-alt mr-2"></i><span>Delete</span>
+                        </button>
+                        </td>
+                    </tr>
+                    <tr class="bg-gray-100">
+                        <td class="border px-4 py-2">Integer semper pellentesque</td>
+                        <td class="border px-4 py-2">Neque turpis enim</td>
+                        <td class="border px-4 py-2">Egestas non sociis</td>
+                        <td class="border px-4 py-2">
+                          <button class="flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-edit mr-2"></i><span>Edit</span>
+                        </button>
+                        <button class="flex items-center bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-trash-alt mr-2"></i><span>Delete</span>
+                        </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2">Parturient at id</td>
+                        <td class="border px-4 py-2">Sem neque, mattis</td>
+                        <td class="border px-4 py-2">Pellentesque facilisis massa</td>
+                        <td class="border px-4 py-2">
+                          <button class="flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-edit mr-2"></i><span>Edit</span>
+                        </button>
+                        <button class="flex items-center bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-trash-alt mr-2"></i><span>Delete</span>
+                        </button>
+                        </td>
+                    </tr>
+                    <tr class="bg-gray-100">
+                        <td class="border px-4 py-2">Amet, pretium eget</td>
+                        <td class="border px-4 py-2">In ipsum volutpat</td>
+                        <td class="border px-4 py-2">Ut feugiat egestas</td>
+                        <td class="border px-4 py-2">
+                          <button class="flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-edit mr-2"></i><span>Edit</span>
+                        </button>
+                        <button class="flex items-center bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-trash-alt mr-2"></i><span>Delete</span>
+                        </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2">Risus consequat sollicitudin</td>
+                        <td class="border px-4 py-2">Adipiscing odio nulla</td>
+                        <td class="border px-4 py-2">Pharetra id sit</td>
+                        <td class="border px-4 py-2">
+                          <button class="flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-edit mr-2"></i><span>Edit</span>
+                        </button>
+                        <button class="flex items-center bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-trash-alt mr-2"></i><span>Delete</span>
+                        </button>
+                        </td>
+                    </tr>
+                    <tr class="bg-gray-100">
+                        <td class="border px-4 py-2">Risus consequat sollicitudin</td>
+                        <td class="border px-4 py-2">Adipiscing odio nulla</td>
+                        <td class="border px-4 py-2">Pharetra id sit</td>
+                        <td class="border px-4 py-2">
+                          <button class="flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-edit mr-2"></i><span>Edit</span>
+                        </button>
+                        <button class="flex items-center bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4 rounded">
+                            <i class="fas fa-trash-alt mr-2"></i><span>Delete</span>
+                        </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="flex space-x-2 justify-center items-center mt-5">
+              <button class="px-3 py-1 border border-gray-300 rounded">«</button>
+              <button class="px-3 py-1 border border-gray-300 rounded">1</button>
+              <button class="px-3 py-1 border border-gray-300 rounded bg-blue-500 text-white">2</button>
+              <button class="px-3 py-1 border border-gray-300 rounded">3</button>
+              <button class="px-3 py-1 border border-gray-300 rounded">4</button>
+              <button class="px-3 py-1 border border-gray-300 rounded">5</button>
+              <button class="px-3 py-1 border border-gray-300 rounded">»</button>
+            </div>
+        </div> 
+      </div> 
+
+      <div class="my-7 mx-7 bg-white p-6 rounded-md">
+        <h1 class="text-2xl font-bold mb-4">Form title</h1>
+        <p class="text-gray-600 mb-6">Sed tortor, sed velit ridiculus ipsum pharetra lacus odio gravida augue enim.</p>
+        <div class="flex mb-4">
+            <button class="flex items-center px-4 py-2 bg-[#FDE68A] rounded border border border-[#D97706]">
+                <img src="https://upload.wikimedia.org/wikipedia/en/archive/a/ae/20190917170935%21Flag_of_the_United_Kingdom.svg" alt="English" class="w-6 h-4 mr-2">
+                English
+            </button>
+            <button class="flex items-center ml-2 px-4 py-2 bg-white rounded border border-gray-300">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" alt="Turkish" class="w-6 h-4 mr-2">
+                Turkish
+            </button>
+        </div>
+        <form>
+            <div class="mb-4">
+                <label class="block text-gray-700">Label title</label>
+                <input type="text" class="outline-none mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Placeholder content">
+            </div>
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-gray-700">Label title</label>
+                    <select class="outline-none mt-1 block w-full p-2 border border-gray-300 rounded-md">
+                        <option selected disabled>Choose</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-gray-700">Label title</label>
+                    <input type="text" class="outline-none mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Placeholder content">
+                </div>
+                <div>
+                    <label class="block text-gray-700">Label title</label>
+                    <input type="text" class="outline-none mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Placeholder content">
+                </div>
+                <div>
+                    <label class="block text-gray-700">Label title</label>
+                    <input type="text" class="outline-none mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Placeholder content">
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Label title</label>
+                <textarea class="outline-none mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Placeholder content"></textarea>
+            </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
